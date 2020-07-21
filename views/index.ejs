@@ -1,0 +1,24 @@
+<%- include("./partials/header.ejs") %>
+<link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<%- include("./partials/navbar.ejs") %>
+<div id="main">
+  <hr>
+<% blogs.forEach(blogs=>{ %>
+  <div id="wrap">
+  <div id="image">
+  <img src="<%= blogs.image %>" alt="">
+  </div>
+  <div id="no_image">
+  <h2> <%= blogs.title %></h2>
+  <p><%= blogs.created.toDateString() %></p>
+  <p><%= blogs.body.slice(0,100) %></p>
+  <a href="/blogs/<%= blogs._id %>">Read More <i class="fas fa-chevron-right"></i></a>
+  </div>
+  </div>
+  <hr>
+ <% }) %>
+</div>
+<%- include("./partials/footer.ejs") %>
+    

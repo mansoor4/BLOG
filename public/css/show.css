@@ -1,0 +1,95 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#main
+{
+    width:750px;
+    margin: 50px auto;
+    border: 1px solid rgb(202, 202, 202);
+    box-sizing: border-box;
+}
+#content
+{
+    width:96%;
+    margin: 0 auto;
+}
+#content h1
+{
+    padding-left: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+#content img
+{
+  width: 500px;
+  margin: 30px auto;
+  display: block;
+
+}
+#content p:nth-child(3){
+    margin-top: 20px;
+    text-decoration: solid;
+    padding-left: 5px;
+}
+#content p:nth-child(4)
+{
+   text-align: justify;
+   padding-left: 5px;
+
+}
+#content #button
+{
+    width:40%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+#content #button button:nth-child(1)
+{
+ border: 1px solid rgb(255, 153, 0);
+ margin-right: 8px;
+ background-color: white;
+ padding:4px 6px;
+}
+#content #button button:nth-child(1):hover
+{
+    box-shadow: 0 0 8px 0px rgb(255, 153, 0);
+}
+#content #button button:nth-child(1) a
+{
+    color: rgb(255, 153, 0);
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+}
+#content #button button:nth-child(1) a:hover
+{
+   text-decoration: none;
+}
+#content #button button:nth-child(2)
+{
+ border: 1px solid red;
+ margin-right: 5px;
+ background-color: white;
+ padding:4px 6px;
+}
+#content #button button:nth-child(2):hover
+{
+    box-shadow: 0 0 8px 0px red;
+}
+#content #button button:nth-child(2) a
+{
+    color: red;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+}
+#content #button button:nth-child(2) a:hover
+{
+   text-decoration: none;
+}
+
+

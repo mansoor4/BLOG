@@ -1,0 +1,18 @@
+<%- include("./partials/header.ejs") %>
+<link rel="stylesheet" href="/css/new.css">
+</head>
+<body>
+<%- include("./partials/navbar.ejs") %>
+<div id="form">
+    <h1>Edit Blog <%= blog.title %></h1>
+    <form action="/blogs/<%= blog._id %>?_method=PUT" method="POST">
+      <label for="title">TITLE</label>
+      <input type="text" name="blog[title]" id="title" value="<%= blog.title %>">
+      <label for="image">IMAGE</label>
+      <input type="text" name="blog[image]" id="image" value="<%= blog.image %>">
+      <label for="title">BODY</label>
+      <textarea name="blog[body]"><%= blog.body %></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+</div>
+<%- include("./partials/footer.ejs") %>

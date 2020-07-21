@@ -1,0 +1,86 @@
+body
+{
+    padding: 0;
+    margin: 0;
+   font-family: sans-serif;
+}
+#main
+{
+    width:800px;
+    margin: 50px auto;
+}
+#wrap
+{
+    display: flex;
+    margin-top: 20px;
+    height: 100%;
+}
+#image
+{
+    flex: 1;
+}
+#image img
+{
+    width:100%;
+    transform: scale(.95);
+    height: 100%;
+}
+#no_image
+{
+    flex: 1;
+    margin-left: 15px;
+    text-align: justify;
+    transform: scale(.9);
+}
+#no_image h2
+{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(58, 44, 44);
+    transform: translateX(-5px);
+}
+#no_image p:nth-child(2)
+{
+    text-decoration: underline;
+    font-weight: 600;
+    color: rgb(119, 116, 116);
+} 
+#no_image a
+{
+    border: 2px solid rgb(174, 32, 240);
+    padding:10px 30px;
+    color: rgb(174, 32, 240);
+    font-weight: 600;
+  transform: translateY(-10px);
+
+}
+#no_image a:hover
+{
+    text-decoration: none;
+    background-color: rgb(174, 32, 240) ;
+    color: white;
+}
+#no_image a i{
+    font-size: 25px;
+    transform: translate(10px,3px);
+}
+#no_image p:nth-child(3)
+{
+  font-weight: 600;
+  color: rgb(85, 80, 80);
+  transform: translateY(-10px);
+}
+#no_image p:nth-child(3)::first-letter
+{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 22px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+ #main hr
+{
+    background-color: rgb(185, 182, 182);
+    height: 2px;
+ border-radius: 300px;
+}
