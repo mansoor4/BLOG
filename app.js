@@ -6,7 +6,7 @@ const methodOverride=require("method-override");
 // DATABASE connection
 const mongoose=require("mongoose");
 const { ENGINE_METHOD_DIGESTS } = require("constants");
-mongoose.connect("mongodb+srv://mansoor:M@nsoor123@cluster0.78gep.mongodb.net/blog?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
+mongoose.connect("mongodb://localhost/blog_db",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
 const blogSchema=new mongoose.Schema(
     {
         title:{type:String,required:true,trim:true},
